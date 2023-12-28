@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    display:block;
+    background: url('asset/wallpaperflare.com_wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+button {
+    margin: 10px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #23a944;
+    color: rgb(58, 44, 187); 
+    border: none; 
+    cursor: pointer;
+}
+button:hover {
+    background-color: #23a944; 
+    height: 10vh;
+}
+
+button:active {
+    transform: scale(1.1); 
+}
+
+.text-with-stroke {
+    color: rgb(0, 0, 0); 
+    text-shadow: 1px 0px rgb(0, 0, 0);
+}
+
+img {
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+    border: 1px solid #ccc; 
+}
+
+button {
+    width: 150px; 
+    height: 50px; 
+    margin-bottom: 10px; 
+}
+
+
+
+h1, button {
+    display: inline-block;
+    vertical-align: middle;
+}

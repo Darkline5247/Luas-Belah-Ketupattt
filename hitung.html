@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <title>Luas Belah Ketupat</title>
+</head>
+<center>
+<body>
+    <div class="text-with-stroke">
+    <h1>Menghitung Luas Belah Ketupat</h1><br>
+    <label for="">d1</label><br>
+    <input type="number" id="horizontal"><br>
+    <label for="">d2</label><br>
+    <input type="number" id="vertikal"><br>
+    <button id="hitung">Hitung</button>
+    <div id="output"></div>
+    <script>
+        const horizontal = document.getElementById('horizontal')
+        const vertikal = document.getElementById('vertikal')
+        const hitung = document.getElementById('hitung')
+        const output = document.getElementById('output')
+        hitung.addEventListener('click', function(){
+            let d1 = horizontal.value
+            let d2 = vertikal.value
+            let l = 0.5*d1*d2
+            output.innerHTML = `0,5 * d1(diagonal 1) ${d1}cm * d2(diagonal 2) ${d2}cm = ${l} cm2`
+        })
+    </script>
+    <button id="rumus">rumus</button>
+    <button id="deskripsi">deskripsi</button>
+    <button id="kembali">kembali</button>
+    <script>
+        var rumus = document.getElementById("rumus");
+            rumus.addEventListener("click", function() {
+                window.location.href = "rumus.html";
+            });
+        var deskripsi = document.getElementById("deskripsi");
+        deskripsi.addEventListener("click", function() {
+            window.location.href = "deskripsi.html";
+        });
+    </script>
+    <script>
+        var kembali = document.getElementById("kembali");
+            kembali.addEventListener("click", function() {
+                window.location.href = "cabang.html";
+            });
+    </script>
+</div>
+</body>
+</center>
+</html>

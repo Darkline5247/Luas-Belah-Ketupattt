@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <style>
+        img {
+            width: 200px; 
+            height: auto; 
+        }
+    </style>
+    <title>Luas Belah Ketupat</title>
+</head>
+<body>
+    <center>
+    <div class="text-with-stroke">
+    <h1>Rumus</h1>
+        <p class="paragraph"></p>
+        Rumus Luas Belah Ketupat = ½ x diagonal 1 x diagonal 2 atau ½ AC x BD.
+        dan ½ bisa diganti dengan 0,5
+    </p>
+
+    <img src="asset/image-2-soo.png" alt="asset/image-2-soo.png">
+    <button id="deskripsi">deskripsi</button>
+    <button id="hitung">hitung</button>
+    <button id="kembali">kembali</button>
+</center>
+    <script>
+        var hitung = document.getElementById("hitung");
+            hitung.addEventListener("click", function() {
+                window.location.href = "hitung.html";
+            });
+        var kembali = document.getElementById("kembali");
+        kembali.addEventListener("click", function() {
+            window.location.href = "cabang.html";
+        });
+        var deskripsi = document.getElementById("deskripsi");
+        deskripsi.addEventListener("click", function() {
+            window.location.href = "deskripsi.html";
+        });
+    </script>
+</body>
+</html>
